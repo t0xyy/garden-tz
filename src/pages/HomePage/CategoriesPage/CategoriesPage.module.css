@@ -1,0 +1,42 @@
+.page {
+  padding: 20px;
+}
+
+.page h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.card {
+  display: block;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 2px 4px rgba(15, 15, 15, 0.06);
+  text-decoration: none;
+  color: #222;
+  overflow: hidden;
+}
+
+.imageWrap {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.imageWrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card p {
+  padding: 10px 14px 14px;
+  font-weight: 600;
+  font-size: 15px;
+}

@@ -1,0 +1,15 @@
+.section {
+  margin: 40px 0;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.head h2 {
+  font-size: 32px;
+  font-weight: 700;
+}

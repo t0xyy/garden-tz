@@ -1,0 +1,41 @@
+.banner {
+  position: relative;
+  width: 100%;
+  height: 450px; /* ↑ регулируй размер баннера (из макета ~460px) */
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%; /* смещаем акцент вверх */
+  filter: brightness(0.6);
+}
+
+.text {
+  position: absolute;
+  top: 26%;
+  left: 8%;
+  color: #fff;
+  max-width: 500px;
+}
+
+.text h1 {
+  font-size: 48px; /* как в макете */
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 26px;
+}
+
+.text button {
+  background: #4caf50;
+  color: #fff;
+  font-size: 18px;
+  padding: 14px 28px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
