@@ -1,0 +1,7 @@
+.head{margin-bottom:14px}
+.layout{display:grid; grid-template-columns: 260px 1fr; gap:16px; align-items:start}
+.side{padding:12px; display:grid; gap:10px}
+.link,.active{padding:12px; border-radius:14px; border:1px solid var(--border); color:var(--muted); background: rgba(255,255,255,.03)}
+.active{color: var(--text); border-color: rgba(110,231,255,.35); background: rgba(110,231,255,.07)}
+.main{padding:16px}
+@media (max-width: 900px){.layout{grid-template-columns: 1fr}}

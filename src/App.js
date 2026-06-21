@@ -1,16 +1,16 @@
-import { BrowserRouter } from "react-router-dom";
-import AppRouter from "./router";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import { Routes, Route, Navigate } from "react-router-dom";
 
-function App() {
+import LandingPage from "./pages/LandingPage/LandingPage";
+import CabinetPage from "./pages/CabinetPage/CabinetPage";
+import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
+
+export default function App() {
   return (
-    <BrowserRouter>
-      <Header />
-      <AppRouter />
-      <Footer />
-    </BrowserRouter>
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/cabinet/*" element={<CabinetPage />} />
+      <Route path="/404" element={<NotFoundPage />} />
+      <Route path="*" element={<Navigate to="/404" replace />} />
+    </Routes>
   );
 }
-
-export default App;

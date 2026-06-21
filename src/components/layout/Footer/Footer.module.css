@@ -1,0 +1,19 @@
+.footer{
+  border-top: 1px solid var(--border);
+  padding:42px 0 26px;
+  background: rgba(0,0,0,.20);
+}
+.row{
+  display:grid;
+  grid-template-columns: 1.2fr .8fr .8fr;
+  gap:18px;
+}
+.title{font-weight:800; margin-bottom:8px}
+.muted{color:var(--muted); line-height:1.5}
+.col a{display:block; margin:8px 0; color:var(--muted)}
+.col a:hover{color:var(--text)}
+.head{font-weight:700; margin-bottom:6px}
+.bottom{margin-top:26px; color:var(--muted); font-size:14px}
+@media (max-width: 800px){
+  .row{grid-template-columns: 1fr}
+}

@@ -1,0 +1,5 @@
+export const CABINET_REQUEST='cabinet/request'
+export const CABINET_SUCCESS='cabinet/success'
+export const CABINET_FAILURE='cabinet/failure'
+export const CABINET_ADD_COMMENT='cabinet/addComment'
+export const CABINET_SET_STATUS='cabinet/setStatus'
